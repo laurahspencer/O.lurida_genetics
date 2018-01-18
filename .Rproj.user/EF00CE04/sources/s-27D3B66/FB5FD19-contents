@@ -1,0 +1,31 @@
+---
+title: "Oly-Genetics-NF-Testing"
+author: "Laura H Spencer"
+date: "January 17, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Oly Genetics Analysis, playing around with data 
+
+Today I played with the 2016/2017 Oly microsatellite data in R, generating some summary statistics by following a few online tutorials. What I've learned:   * The spreadhseet "Olympic Oyster NFH_NFW (1).xlsx" from Crystal houses data from NF population (Fidalgo Bay) from two populations: 2016 hatchery-produced (F1), and 2017 wild.  Crystal already determined bins, rounded the microsatellite data to produce: 100 samples with diploid genotype data across 6 loci (2 alleles per loci).  
+  * There are additional microsatellite data from 2015, available online from Rick/Andy: https://www.dropbox.com/sh/0tz6a4f8tz8rwap/AACXhjgrZc2UWYSAk4N-uoM6a?dl=0
+
+My github repo 
+
+```{r}
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

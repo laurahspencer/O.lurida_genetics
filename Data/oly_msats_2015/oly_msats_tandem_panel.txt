@@ -1,0 +1,13 @@
+# Genemapper panel file written by tandem 1.09. Replace <color> with the respective fluorescent dye color. Also change the GM version number unless you're running GM 4.0
+Version	GM v 4.0
+Kit type:	MICROSATELLITE
+Chemistry Kit	oly_msats	none
+Panel	oly_msats	none
+Olur10	<color>	190	330	-	3	0.0	none	none		false	-
+Olur11	<color>	120	200	-	3	0.0	none	none		false	-
+Olur12	<color>	160	300	-	3	0.0	none	none		false	-
+Olur13	<color>	220	330	-	4	0.0	none	none		false	-
+Olur15	<color>	140	250	-	4	0.0	none	none		false	-
+Olur17	<color>	160	300	-	4	0.0	none	none		false	-
+Olur18	<color>	140	370	-	4	0.0	none	none		false	-
+Olur19	<color>	190	300	-	4	0.0	none	none		false	-

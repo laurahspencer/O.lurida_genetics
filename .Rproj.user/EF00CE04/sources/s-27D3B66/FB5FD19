@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1516260745090.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "3848853668",
+    "id" : "FB5FD19",
+    "lastKnownWriteTime" : 4294967302,
+    "last_content_update" : 1516261253756,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "16,15",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
