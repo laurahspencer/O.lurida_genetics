@@ -1,0 +1,5 @@
+"0","Freq.Plots <- function(wanted_locus, frequency_table, population) {"
+"0","  Locus=frequency_table[which(frequency_table[,1]==wanted_locus),]"
+"0","  plot(as.numeric(as.character(Locus[,2])),as.numeric(as.character(Locus[,4])),xlab=""Allele"",ylab=""Frequency"",main=paste(population, ""_"", ""Locus_"",Locus[1,1]),pch=21,bg=""blue"",cex=1.5)"
+"0","  plot(1:length(Locus[,2]),sort(as.numeric(as.character(Locus[,4])),decreasing=TRUE),xlab=""Allele (orderd by frequency)"",ylab=""Frequency"",main=paste(population, ""_"", ""Locus_"",Locus[1,1], sep=""""),pch=21,bg=""blue"",cex=1.5)"
+"0","}"

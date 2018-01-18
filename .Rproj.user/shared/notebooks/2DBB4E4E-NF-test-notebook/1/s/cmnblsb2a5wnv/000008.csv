@@ -1,0 +1,2 @@
+"0","plot(NFH.2016.summary$Hobs, NFH.2016.summary$Hexp, xlab=""Observed Heterozygosity"", ylab=""Expected Heterozygosity"", "
+"0","     main=""Expected ~ Observed Heterozygosity per locus, NFH 2016"")"

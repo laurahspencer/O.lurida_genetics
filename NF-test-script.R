@@ -1,13 +1,4 @@
-# Import 2016/2017 microsatellite data
-library(poppr)
-# a good reference: https://grunwaldlab.github.io/Population_Genetics_in_R/TOC.html
 
-NFH.2016 <- read.genalex("Data/Oly2016NFH_Rounded.csv", ploidy=2) 
-NFW.2017 <- read.genalex("Data/Oly2017NFW_Rounded.csv", ploidy=2)
-NF <- read.genalex("Data/Oly2016NFH+2017NFW_Merged.csv", ploidy=2)
-summary(NFH.2016)
-summary(NFW.2017)
-summary(NF)
 
 # Have we sampled enough loci? 
 NFH.2016.acccurve <- genotype_curve(NFH.2016, sample=1000, quiet=T) 
@@ -72,11 +63,11 @@ plot(NF.W2017.pair, limits=pair.range)
 plot(NF.H2016.pair, limits=pair.range)
 NF.W2017.pair
 NF.H2016.pair
+
 # it looks like loci 13, 15 & 19 are possibly linked
 
 NF.freq <- rraf(NF, by_pop=TRUE)
 NF.freq.t <- t(NF.freq)
-View(NF.freq.t)
 plot(NF.freq.t)
 
 #---- Generate statistics using a different tutorial / R package ------# 

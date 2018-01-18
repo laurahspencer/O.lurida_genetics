@@ -1,0 +1,4 @@
+"0","NFH.afreq <- allelic.freq(NFW.df.1)[,-1]"
+"0","NFW.afreq <- allelic.freq(NFH.df.1)[,-1]"
+"0","write.table(NFH.afreq,file=""Analyses/NFH-2016-Allelefrequencies.txt"",row.names=FALSE,col.names=TRUE,sep=""\t"",append=FALSE)"
+"0","write.table(NFW.afreq,file=""Analyses/NFW-2017-Allelefrequencies.txt"",row.names=FALSE,col.names=TRUE,sep=""\t"",append=FALSE)"
