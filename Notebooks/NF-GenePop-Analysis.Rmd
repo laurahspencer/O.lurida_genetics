@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir ="~/Documents/Roberts Lab/O.lurida_genetics")
 ```
 
-### In this notebook I will use the GenePop R program to analyze the 2016/2017 Fidalgo Bay (NF) Ostrea lurida microsatellite data; the results from each analysis are housed in a series of .txt files. 
+#### In this notebook I will use the GenePop R program to analyze the 2016/2017 Fidalgo Bay (NF) Ostrea lurida microsatellite data; the results from each analysis are housed in a series of .txt files. 
 
 Prior to importing the data, prepared the 2016/2017 NF data in Excel and exported into GenePop format; resulting file is available on [2018-01-22-Preparing-for-Genepop.md](https://github.com/laurahspencer/O.lurida_genetics/blob/master/Notebooks/2018-01-22-Preparing-for-Genepop.md)
 
@@ -25,23 +25,27 @@ knitr::opts_chunk$set(library(genepop))
 ```{r}
 basic_info(inputFile="Data/Oly2016NFH+2017NFW_Merged.txt", outputFile = "Analyses/NF-Basic-Info.txt", verbose=T)
 ```
-#### Resulting file: ["NF-Basic-Info.txt"]()
+#### Resulting file: ["NF-Basic-Info.txt"](https://raw.githubusercontent.com/laurahspencer/O.lurida_genetics/master/Analyses/NF-Basic-Info.txt)
 #### Hetero- and homozygosity info pasted here: 
 
-#### NF Wild
+
+### NF Wild   
+
 | Loci                   | Olur10      | Olur11  | Olur12  | Olur13  | Olur15  | Olur19  | 
 |------------------------|-------------|---------|---------|---------|---------|---------| 
-| Expected Homozygotes   |  4.99       |  24.59  |  11.83  |  6.68   |  6.66   |  6.64   | 
+| Expected Homozygotes   | 4.99        | 24.59   | 11.83   | 6.68    | 6.66    | 6.64    | 
 | Observed Homozygotes   | 2           | 28      | 12      | 7       | 6       | 7       | 
-| Expected Heterozygotes |  92.01      |  70.41  |  86.17  |  91.32  |  91.34  |  90.36  | 
+| Expected Heterozygotes | 92.01       | 70.41   | 86.17   | 91.32   | 91.34   | 90.36   | 
 | Observed Heterozygotes | 95          | 67      | 86      | 91      | 92      | 90      | 
 
-#### NF Hatchery
+
+### NF Hatchery      
+
 | Loci                   | Olur10      | Olur11  | Olur12  | Olur13  | Olur15  | Olur19  | 
-|----------------------------------------------------------------------------------------|
-| Expected Homozygotes   |  5.02       |  23.03  |  13.44  |  7.14   |  7.22   |  7.10   | 
+|------------------------|-------------|---------|---------|---------|---------|---------| 
+| Expected Homozygotes   | 5.02        | 23.03   | 13.44   | 7.14    | 7.22    | 7.10    | 
 | Observed Homozygotes   | 7           | 27      | 5       | 6       | 6       | 7       | 
-| Expected Heterozygotes |  92.98      |  70.97  |  86.56  |  88.86  |  90.78  |  88.90  | 
+| Expected Heterozygotes | 92.98       | 70.97   | 86.56   | 88.86   | 90.78   | 88.90   | 
 | Observed Heterozygotes | 91          | 67      | 95      | 90      | 92      | 89      | 
 
 
@@ -50,7 +54,7 @@ basic_info(inputFile="Data/Oly2016NFH+2017NFW_Merged.txt", outputFile = "Analyse
 test_HW(inputFile = "Data/Oly2016NFH+2017NFW_Merged.txt", which="Proba", outputFile = "Analyses/NF-HWE.txt", enumeration = FALSE, dememorization = 10000, batches = 500, iterations = 2000, verbose = interactive())
 ```
 
-#### Resulting file: ["NF-HWE.txt"]()
+#### Resulting file: ["NF-HWE.txt"](https://raw.githubusercontent.com/laurahspencer/O.lurida_genetics/master/Analyses/NF-HWE.txt)
 #### All P-values across loci in each population are >>0.05, do not reject the null hypothesis that all loci are in HWE. 
         
     Pop : NFW-2017
@@ -101,7 +105,7 @@ test_HW(inputFile = "Data/Oly2016NFH+2017NFW_Merged.txt", which="Proba", outputF
 test_LD(inputFile = "Data/Oly2016NFH+2017NFW_Merged.txt", outputFile = "Analyses/NF-LD.txt", dememorization = 10000, batches = 100, iterations = 1000, verbose = TRUE)
 ```
 
-#### Resulting file: ["NF-LD.txt"]()
+#### Resulting file: ["NF-LD.txt"](https://raw.githubusercontent.com/laurahspencer/O.lurida_genetics/master/Analyses/NF-LD.txt)
 #### Interesting, results from this Linkage Disequilibrium test indicate that there are, in fact, linked loci:
 
     Pop             Locus#1  Locus#2    P-Value      S.E.     Switches
@@ -164,7 +168,7 @@ test_LD(inputFile = "Data/Oly2016NFH+2017NFW_Merged.txt", outputFile = "Analyses
 nulls(inputFile = "Data/Oly2016NFH+2017NFW_Merged.txt", outputFile = "Analyses/NF-null.txt", nullAlleleMethod = "B96", CIcoverage = 0.95, verbose = TRUE)
 ```
 
-#### Resulting file: ["NF-null.txt"]()
+#### Resulting file: ["NF-null.txt"](https://raw.githubusercontent.com/laurahspencer/O.lurida_genetics/master/Analyses/NF-null.txt)
 #### Null allele frequences low; will compare with results from MicroChecker to confirm. 
     
     (Locus by population) table of estimated null allele frequencies
@@ -206,7 +210,7 @@ nulls(inputFile = "Data/Oly2016NFH+2017NFW_Merged.txt", outputFile = "Analyses/N
 test_diff(inputFile = "Data/Oly2016NFH+2017NFW_Merged.txt", outputFile = "Analyses/NF-Diff.txt", genic=FALSE, pairs=TRUE, dememorization = 10000, batches = 100, iterations = 1000, verbose = TRUE)
     ```
 
-#### Resulting file: ["NF-Diff.txt"]()
+#### Resulting file: ["NF-Diff.txt"](https://raw.githubusercontent.com/laurahspencer/O.lurida_genetics/master/Analyses/NF-Diff.txt)
 #### Results indicate that genotypes are drawn from the same distribution, as P>>.01 for all loci. 
 
     Locus        Population pair        P-Value  S.E.     Switches
@@ -231,7 +235,7 @@ test_diff(inputFile = "Data/Oly2016NFH+2017NFW_Merged.txt", outputFile = "Analys
 Fst(inputFile = "Data/Oly2016NFH+2017NFW_Merged.txt", outputFile = "Analyses/NF-Fst.txt", sizes=F, pairs=TRUE, dataType="Diploid", verbose = TRUE)
 ```
 
-#### Resulting file: ["NF-Fst.txt"]()
+#### Resulting file: ["NF-Fst.txt"](https://raw.githubusercontent.com/laurahspencer/O.lurida_genetics/master/Analyses/NF-Fst.txt)
 #### Values are very close to zero, which indicates that there is little genetic differentiation among wild and hatchery populations.
 
     Indices for populations:
@@ -282,7 +286,7 @@ Fst(inputFile = "Data/Oly2016NFH+2017NFW_Merged.txt", outputFile = "Analyses/NF-
 genedivFis(inputFile="Data/Oly2016NFH+2017NFW_Merged.txt", sizes=FALSE, outputFile = "Analyses/NF-DivFis.txt", dataType = "Diploid", verbose=interactive())
 ```
 
-#### Resulting file: ["NF-DivFis.txt"]()
+#### Resulting file: ["NF-DivFis.txt"](https://raw.githubusercontent.com/laurahspencer/O.lurida_genetics/master/Analyses/NF-DivFis.txt)
 
 
 ```{r}
