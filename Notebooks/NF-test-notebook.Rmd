@@ -258,3 +258,4 @@ for (i in 1:length(loci)) {
 Freq.Plots("Olur19", NFW.afreq, "NFW-2017")
 ```
 
+

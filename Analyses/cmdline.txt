@@ -1,0 +1,6 @@
+Genepop
+GenepopInputFile=../data/Oly2016NFH+2017NFW_Merged.txt
+MenuOptions=5:1
+RandomSeed=67144630
+Mode=Batch
+

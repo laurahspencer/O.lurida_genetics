@@ -1,4 +1,12 @@
+# Import 2016/2017 microsatellite data
+# Used the following reference: https://grunwaldlab.github.io/Population_Genetics_in_R/TOC.html
 
+NFH.2016 <- read.genalex("Data/Oly2016NFH_Rounded.csv", ploidy=2, genclone=FALSE) #read as a genind object, not genclone
+NFW.2017 <- read.genalex("Data/Oly2017NFW_Rounded.csv", ploidy=2, genclone=FALSE)
+NF <- read.genalex("Data/Oly2016NFH+2017NFW_Merged.csv", ploidy=2, genclone=FALSE)
+summary(NFH.2016)
+summary(NFW.2017) #summary of wild samples
+summary(NF) #summary of hatchery and wild combined 
 
 # Have we sampled enough loci? 
 NFH.2016.acccurve <- genotype_curve(NFH.2016, sample=1000, quiet=T) 
@@ -44,7 +52,7 @@ NF.pop <- poppr(NF) #summary stats on each population
 
 library("pegas")
 NF.HW <- seppop(NF) %>% lapply(hw.test, B=1000) #all P-values >0.05; do not reject the null that these populations are under HWE. 
-NF.HW.P <- sapply(test, "[", i=TRUE, j=3) #pvalues of HW chi-squared test for all loci, both pops
+NF.HW.P <- sapply(NF.HW , "[", i=TRUE, j=3) #pvalues of HW chi-squared test for all loci, both pops
 
 # Are populations in linkage disequilibrium? The null hypothesis tested is that alleles observed at different loci are not linked if populations are sexual while alleles recombine freely into new genotypes during the process of sexual reproduction
 # IA =VO/VE -1 
@@ -153,5 +161,32 @@ for (i in 1:length(loci)) {
   dev.off()
 }
 
+# Calculate allelic richness using PopGenReport program (https://cran.r-project.org/web/packages/PopGenReport/PopGenReport.pdf)
+# all.richness is the allelic richness for each combination of population and locus
+# sum.richness is the sum of the allelic richnesses for each population
+# mean.richness is the mean allelic richness across all loci
+# alleles.sampled is the smallest number of individuals sampled across all combinations of population and locus multiplied by the ploidy of the species
+# pop.sizes is a matrix with the total number of alleles counted for each combination of population and locus.
+allel.rich(NF, min.alleles = NULL) #min.alleles=NULL has 
 
+# Visualize allele frequences via heat maps, across loci (prints separate plot for each loci)
+allele.dist(NF, mk.figures = TRUE)
 
+pairwise.fstb(NF) 
+# The values of Fst range from 0 to 1. 0 implies complete panmixis; that is, that the two populations are interbreeding freely. 1 implies that all genetic variation is explained by the population structure, and that the two populations do not share any genetic diversity.
+
+NF.null <- null.all(NF)
+NFW.2017.null <- null.all(NFW.2017)
+NFH.2016.null <- null.all(NFH.2016)
+
+NFW.2017.null$homozygotes$overall$observed
+NFH.2016.null$homozygotes$overall$observed
+
+NFW.2017.null$null.allele.freq$summary2
+NFH.2016.null$null.allele.freq$summary2
+
+install.packages("polysat")
+library(polysat)
+NFW.df
+NFH.df
+NFH.afreq
