@@ -4,7 +4,7 @@
 
 Crystal rounded the raw microsat data for the Fidalgo Bay 2016-hatchery and 2017-wild data.  She provided both raw and rounded data. Before moving forward with the rounded data, I'll check out the binning method she used. 
 
-In the Excel file []() she includes data from both wild and hatchery NF samples. She houses raw data for each locus in separate tabs, creates a list of "bins" at 0.2 increments, calculates frequencies for each bin and visualizes with histograms. 
+In the Excel file [Olympic Oyster NFH_NFW (1).xlsx](https://github.com/laurahspencer/O.lurida_genetics/blob/master/Data/Olympic%20Oyster%20NFH_NFW%20(1).xlsx) she includes data from both wild and hatchery NF samples. She houses raw data for each locus in separate tabs, creates a list of "bins" at 0.2 increments, calculates frequencies for each bin and visualizes with histograms. 
 
 ![image](https://user-images.githubusercontent.com/17264765/35253966-0be0dc42-ff9d-11e7-85bb-15158f6f4335.png)
 
@@ -28,6 +28,6 @@ A window pops up, which should automatically ID the #loci & #samples if you form
 
 ![image](https://user-images.githubusercontent.com/17264765/35255755-7000ef70-ffa5-11e7-9edc-6062c98284f0.png)
 
-Saved the file as a .txt file under [Oly2016NFH+2017NFW_Merged.txt](); here's what the resulting PopGen formatted file looks like: 
+Saved the file as a .txt file under [Oly2016NFH+2017NFW_Merged.txt](https://github.com/laurahspencer/O.lurida_genetics/blob/master/Data/Oly2016NFH%2B2017NFW_Merged.txt); here's what the resulting PopGen formatted file looks like: 
 
 ![image](https://user-images.githubusercontent.com/17264765/35255846-eb99b96e-ffa5-11e7-9364-e96df4e2cbc0.png)
