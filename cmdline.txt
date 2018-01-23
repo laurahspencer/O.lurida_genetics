@@ -1,0 +1,7 @@
+Genepop
+GenepopInputFile=Data/Oly2016NFH+2017NFW_Merged.txt
+MenuOptions=5:2
+EstimationPloidy=Diploid
+RandomSeed=67144630
+Mode=Batch
+

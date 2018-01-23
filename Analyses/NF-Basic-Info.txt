@@ -1,6 +1,6 @@
 Genepop 4.7.0, Basic data for each locus in each population
 
-File: ../data/Oly2016NFH+2017NFW_Merged.txt (Title line:"NF 2016/2017")
+File: Data/Oly2016NFH+2017NFW_Merged.txt (Title line:"NF 2016/2017")
 
 Number of populations detected : 2
 Number of loci detected        : 6

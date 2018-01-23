@@ -1,6 +1,9 @@
 Genepop
-GenepopInputFile=../data/Oly2016NFH+2017NFW_Merged.txt
-MenuOptions=5:1
+GenepopInputFile=../Data/Oly2016NFH+2017NFW_Merged.txt
+MenuOptions=3:3
+Dememorisation=10000
+BatchNumber=100
+BatchLength=1000
 RandomSeed=67144630
 Mode=Batch
 

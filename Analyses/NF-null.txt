@@ -1,0 +1,44 @@
+Genepop 4.7.0
+Estimation of null allele frequency by Brookfield's 1996 method.
+
+File: Data/Oly2016NFH+2017NFW_Merged.txt (Title line:"NF 2016/2017")
+
+Number of populations detected : 2
+Number of loci detected        : 6
+
+
+
+(Locus by population) table of estimated null allele frequencies
+================================================================
+Locus:     Populations (! names truncated to 6 characters):
+           NFW-20 NFH-20 
+           -----------------------------------------------------
+Olur10     0.0000 0.0079 
+Olur11     0.0125 0.0159 
+Olur12     0.0000 0.0000 
+Olur13     0.0000 0.0000 
+Olur15     0.0000 0.0000 
+Olur19     0.0000 0.0000 
+================================================================
+
+
+Confidence intervals for null allele frequencies
+=================================================
+                       Frequency   0.0250   0.9750 
+Locus      Population   estimate   bound    bound
+-------------------------------------------------
+Olur10     NFW-2017    0.0000     (No info for CI)
+           NFH-2016    0.0079     0.0000  0.0422  
+Olur11     NFW-2017    0.0125     0.0000  0.0694  
+           NFH-2016    0.0159     0.0000  0.0724  
+Olur12     NFW-2017    0.0000     (No info for CI)
+           NFH-2016    0.0000     (No info for CI)
+Olur13     NFW-2017    0.0000     (No info for CI)
+           NFH-2016    0.0000     (No info for CI)
+Olur15     NFW-2017    0.0000     (No info for CI)
+           NFH-2016    0.0000     (No info for CI)
+Olur19     NFW-2017    0.0000     (No info for CI)
+           NFH-2016    0.0000     (No info for CI)
+=================================================
+
+Normal ending.

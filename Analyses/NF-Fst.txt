@@ -1,0 +1,55 @@
+Genepop 4.7.0
+Pairwise Fst's
+
+One locus estimates following standard ANOVA as in Weir and Cockerham (1984)
+
+File: Data/Oly2016NFH+2017NFW_Merged.txt (Title line:"NF 2016/2017")
+
+Number of populations detected : 2
+Number of loci detected        : 6
+
+Indices for populations:
+----     -------------
+1        NFW-2017
+2        NFH-2016
+----------------------
+
+Estimates for each locus:
+========================
+  Locus: Olur10
+---------------------------------
+pop      1       
+2     -0.0007 
+
+  Locus: Olur11
+---------------------------------
+pop      1       
+2     -0.0027 
+
+  Locus: Olur12
+---------------------------------
+pop      1       
+2     -0.0020 
+
+  Locus: Olur13
+---------------------------------
+pop      1       
+2      0.0030 
+
+  Locus: Olur15
+---------------------------------
+pop      1       
+2      0.0036 
+
+  Locus: Olur19
+---------------------------------
+pop      1       
+2      0.0027 
+
+Estimates for all loci (diploid):
+=========================
+pop      1       
+2      0.0008 
+
+The file Data/Oly2016NFH+2017NFW_Merged.txt.MIG contains the matrix ready for further analysis
+Normal ending.

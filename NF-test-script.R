@@ -7,6 +7,9 @@ NF <- read.genalex("Data/Oly2016NFH+2017NFW_Merged.csv", ploidy=2, genclone=FALS
 summary(NFH.2016)
 summary(NFW.2017) #summary of wild samples
 summary(NF) #summary of hatchery and wild combined 
+?read.genalex()
+
+
 
 # Have we sampled enough loci? 
 NFH.2016.acccurve <- genotype_curve(NFH.2016, sample=1000, quiet=T) 

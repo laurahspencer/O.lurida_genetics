@@ -1,0 +1,67 @@
+Genepop 4.7.0, Genotypic linkage disequilibrium
+
+File: Data/Oly2016NFH+2017NFW_Merged.txt (Title line:"NF 2016/2017")
+
+Number of populations detected : 2
+Number of loci detected        : 6
+
+Markov chain parameters
+	Dememorisation       : 10000
+	Batches              : 100
+	Iterations per batch : 1000
+
+Pop             Locus#1  Locus#2    P-Value      S.E.     Switches
+----------      -------  -------    --------     -------- --------
+NFW-2017        Olur10   Olur11     0.32418      0.045606      216
+NFW-2017        Olur10   Olur12     0.372000     0.048411       65
+NFW-2017        Olur11   Olur12     1.000000     0.000000      435
+NFW-2017        Olur10   Olur13     1.000000     0.000000       42
+NFW-2017        Olur11   Olur13     0.990730     0.006526      279
+NFW-2017        Olur12   Olur13     0.144450     0.034977       90
+NFW-2017        Olur10   Olur15     1.000000     0.000000       33
+NFW-2017        Olur11   Olur15     0.975760     0.014058      232
+NFW-2017        Olur12   Olur15     1.000000     0.000000       96
+NFW-2017        Olur13   Olur15     0.065770     0.024413       35
+NFW-2017        Olur10   Olur19     1.000000     0.000000       35
+NFW-2017        Olur11   Olur19     1.000000     0.000000      229
+NFW-2017        Olur12   Olur19     1.000000     0.000000       91
+NFW-2017        Olur13   Olur19     0.060010     0.023868       16
+NFW-2017        Olur15   Olur19     0.000000     0.000000       28
+NFH-2016        Olur10   Olur11     1.000000     0.000000      154
+NFH-2016        Olur10   Olur12     0.208400     0.040527       72
+NFH-2016        Olur11   Olur12     0.923220     0.024857      520
+NFH-2016        Olur10   Olur13     1.000000     0.000000       45
+NFH-2016        Olur11   Olur13     0.726700     0.043512      284
+NFH-2016        Olur12   Olur13     0.000000     0.000000      151
+NFH-2016        Olur10   Olur15     1.000000     0.000000       36
+NFH-2016        Olur11   Olur15     0.715690     0.043815      301
+NFH-2016        Olur12   Olur15     0.049120     0.021532      165
+NFH-2016        Olur13   Olur15     0.000000     0.000000       68
+NFH-2016        Olur10   Olur19     1.000000     0.000000       40
+NFH-2016        Olur11   Olur19     0.716270     0.042213      282
+NFH-2016        Olur12   Olur19     0.000000     0.000000      149
+NFH-2016        Olur13   Olur19     0.000000     0.000000       54
+NFH-2016        Olur15   Olur19     0.000000     0.000000       44
+
+P-value for each locus pair across all populations
+(Fisher's method)
+-----------------------------------------------------
+Locus pair                    Chi2      df   P-Value
+--------------------          --------  ---  --------
+Olur10        & Olur11        2.252913  4    0.689355
+Olur10        & Olur12        5.114315  4    0.275768
+Olur11        & Olur12        0.159775  4    0.996974
+Olur10        & Olur13        0.000000  4    1.000000
+Olur11        & Olur13        0.657110  4    0.956511
+Olur12        & Olur13        >35.7544134    <0.000000
+Olur10        & Olur15        0.000000  4    1.000000
+Olur11        & Olur15        0.718094  4    0.949079
+Olur12        & Olur15        6.026978  4    0.197143
+Olur13        & Olur15        >37.3279524    <0.000000
+Olur10        & Olur19        0.000000  4    1.000000
+Olur11        & Olur19        0.667396  4    0.955288
+Olur12        & Olur19        >31.8847694    <0.000002
+Olur13        & Olur19        >37.5112584    <0.000000
+Olur15        & Olur19        >63.7695394    <0.000000
+
+Normal ending.
