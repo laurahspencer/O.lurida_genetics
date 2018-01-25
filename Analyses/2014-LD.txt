@@ -1,0 +1,162 @@
+Genepop 4.7.0, Genotypic linkage disequilibrium
+
+File: Data/oly_msats_2015/2015-SS-PG-GenePop.txt (Title line:"2014 SS & PG")
+
+Number of populations detected : 4
+Number of loci detected        : 8
+
+Markov chain parameters
+	Dememorisation       : 10000
+	Batches              : 100
+	Iterations per batch : 1000
+
+Pop             Locus#1  Locus#2    P-Value      S.E.     Switches
+----------      -------  -------    --------     -------- --------
+PG-W            Olur10   Olur11     0.74754      0.042042      248
+PG-W            Olur10   Olur12     0.960040     0.019454      145
+PG-W            Olur11   Olur12     0.728390     0.040387      576
+PG-W            Olur10   Olur13     1.000000     0.000000       40
+PG-W            Olur11   Olur13     0.937660     0.023577      265
+PG-W            Olur12   Olur13     1.000000     0.000000      136
+PG-W            Olur10   Olur15     1.000000     0.000000       55
+PG-W            Olur11   Olur15     0.694050     0.045063      225
+PG-W            Olur12   Olur15     0.857910     0.034031      165
+PG-W            Olur13   Olur15     0.049540     0.021707       25
+PG-W            Olur10   Olur17     0.164700     0.036939       48
+PG-W            Olur11   Olur17     1.000000     0.000000      260
+PG-W            Olur12   Olur17     0.453270     0.049022      157
+PG-W            Olur13   Olur17     1.000000     0.000000       39
+PG-W            Olur15   Olur17     0.800560     0.040093       44
+PG-W            Olur10   Olur18     1.000000     0.000000       32
+PG-W            Olur11   Olur18     0.000000     0.000000      166
+PG-W            Olur12   Olur18     0.750060     0.043509      129
+PG-W            Olur13   Olur18     1.000000     0.000000       37
+PG-W            Olur15   Olur18     1.000000     0.000000       36
+PG-W            Olur17   Olur18     1.000000     0.000000       41
+PG-W            Olur10   Olur19     1.000000     0.000000       48
+PG-W            Olur11   Olur19     0.876810     0.032052      223
+PG-W            Olur12   Olur19     1.000000     0.000000      132
+PG-W            Olur13   Olur19     0.007030     0.007030       36 <—— 
+PG-W            Olur15   Olur19     0.032320     0.017260       29
+PG-W            Olur17   Olur19     1.000000     0.000000       42
+PG-W            Olur18   Olur19     1.000000     0.000000       42
+SS-W            Olur10   Olur11     0.373970     0.047403      224
+SS-W            Olur10   Olur12     1.000000     0.000000      140
+SS-W            Olur11   Olur12     0.520640     0.045745      658
+SS-W            Olur10   Olur13     1.000000     0.000000       31
+SS-W            Olur11   Olur13     0.651140     0.046276      241
+SS-W            Olur12   Olur13     1.000000     0.000000      143
+SS-W            Olur10   Olur15     1.000000     0.000000       31
+SS-W            Olur11   Olur15     1.000000     0.000000      210
+SS-W            Olur12   Olur15     1.000000     0.000000      161
+SS-W            Olur13   Olur15     0.000000     0.000000       17 <—-
+SS-W            Olur10   Olur17     1.000000     0.000000       39
+SS-W            Olur11   Olur17     0.211010     0.039282      242
+SS-W            Olur12   Olur17     0.000000     0.000000      124 <—- 
+SS-W            Olur13   Olur17     1.000000     0.000000       34
+SS-W            Olur15   Olur17     1.000000     0.000000       30
+SS-W            Olur10   Olur18     0.105820     0.030516       45
+SS-W            Olur11   Olur18     0.180730     0.036653      247
+SS-W            Olur12   Olur18     0.921270     0.026860      159
+SS-W            Olur13   Olur18     1.000000     0.000000       42
+SS-W            Olur15   Olur18     1.000000     0.000000       44
+SS-W            Olur17   Olur18     1.000000     0.000000       33
+SS-W            Olur10   Olur19     1.000000     0.000000       30
+SS-W            Olur11   Olur19     0.799980     0.038363      217
+SS-W            Olur12   Olur19     1.000000     0.000000      159
+SS-W            Olur13   Olur19     0.053050     0.022046       23
+SS-W            Olur15   Olur19     0.000000     0.000000       23 <—- 
+SS-W            Olur17   Olur19     1.000000     0.000000       28
+SS-W            Olur18   Olur19     1.000000     0.000000       54
+PG-F1           Olur10   Olur11     0.000000     0.000000      220 <—-  
+PG-F1           Olur10   Olur12     0.324350     0.046176      170
+PG-F1           Olur11   Olur12     0.420800     0.046500      465
+PG-F1           Olur10   Olur13     1.000000     0.000000       82
+PG-F1           Olur11   Olur13     0.965690     0.016680      202
+PG-F1           Olur12   Olur13     1.000000     0.000000      179
+PG-F1           Olur10   Olur15     1.000000     0.000000       86
+PG-F1           Olur11   Olur15     0.063750     0.022313      196
+PG-F1           Olur12   Olur15     0.951410     0.021312      203
+PG-F1           Olur13   Olur15     0.000000     0.000000       47
+PG-F1           Olur10   Olur17     1.000000     0.000000       58
+PG-F1           Olur11   Olur17     0.000000     0.000000      217 <—- 
+PG-F1           Olur12   Olur17     0.151520     0.034790      193
+PG-F1           Olur13   Olur17     0.655730     0.047386       80
+PG-F1           Olur15   Olur17     1.000000     0.000000       78
+PG-F1           Olur10   Olur18     1.000000     0.000000       82
+PG-F1           Olur11   Olur18     1.000000     0.000000      227
+PG-F1           Olur12   Olur18     0.048910     0.020928      220
+PG-F1           Olur13   Olur18     1.000000     0.000000       85
+PG-F1           Olur15   Olur18     1.000000     0.000000       72
+PG-F1           Olur17   Olur18     0.093310     0.028848       62
+PG-F1           Olur10   Olur19     1.000000     0.000000       74
+PG-F1           Olur11   Olur19     0.036910     0.017840      232
+PG-F1           Olur12   Olur19     0.812360     0.038362      164
+PG-F1           Olur13   Olur19     0.000000     0.000000       45 <—-
+PG-F1           Olur15   Olur19     0.000000     0.000000       33 <—-
+PG-F1           Olur17   Olur19     1.000000     0.000000       68
+PG-F1           Olur18   Olur19     1.000000     0.000000       73
+SS-F1           Olur10   Olur11     1.000000     0.000000      179
+SS-F1           Olur10   Olur12     1.000000     0.000000      158
+SS-F1           Olur11   Olur12     0.450680     0.047099      517
+SS-F1           Olur10   Olur13     1.000000     0.000000       55
+SS-F1           Olur11   Olur13     1.000000     0.000000      191
+SS-F1           Olur12   Olur13     0.059790     0.022601      176
+SS-F1           Olur10   Olur15     1.000000     0.000000       53
+SS-F1           Olur11   Olur15     1.000000     0.000000      221
+SS-F1           Olur12   Olur15     0.074550     0.025920      191
+SS-F1           Olur13   Olur15     0.000000     0.000000       37 <—-
+SS-F1           Olur10   Olur17     1.000000     0.000000       49
+SS-F1           Olur11   Olur17     0.000000     0.000000      199
+SS-F1           Olur12   Olur17     1.000000     0.000000      223
+SS-F1           Olur13   Olur17     1.000000     0.000000       62
+SS-F1           Olur15   Olur17     1.000000     0.000000       58
+SS-F1           Olur10   Olur18     0.000000     0.000000       37 <—-
+SS-F1           Olur11   Olur18     0.930510     0.025461      196
+SS-F1           Olur12   Olur18     0.933300     0.024447      136
+SS-F1           Olur13   Olur18     1.000000     0.000000       51
+SS-F1           Olur15   Olur18     1.000000     0.000000       65
+SS-F1           Olur17   Olur18     1.000000     0.000000       55
+SS-F1           Olur10   Olur19     1.000000     0.000000       51
+SS-F1           Olur11   Olur19     0.812620     0.037736      223
+SS-F1           Olur12   Olur19     1.000000     0.000000      175
+SS-F1           Olur13   Olur19     0.000000     0.000000       31 <—-
+SS-F1           Olur15   Olur19     0.000000     0.000000       38 <—-
+SS-F1           Olur17   Olur19     1.000000     0.000000       67
+SS-F1           Olur18   Olur19     1.000000     0.000000       38
+
+P-value for each locus pair across all populations
+(Fisher's method)
+-----------------------------------------------------
+Locus pair                    Chi2      df   P-Value
+--------------------          --------  ---  --------
+Olur10        & Olur11        >34.4338648    <0.000034 <—- 
+Olur10        & Olur12        2.333425  8    0.969046
+Olur11        & Olur12        5.264421  8    0.728977
+Olur10        & Olur13        0.000000  8    1.000000
+Olur11        & Olur13        1.056622  8    0.997865
+Olur12        & Olur13        5.633834  8    0.688171
+Olur10        & Olur15        0.000000  8    1.000000
+Olur11        & Olur15        6.235995  8    0.620816
+Olur12        & Olur15        5.598703  8    0.692082
+Olur13        & Olur15        >101.6642588    <0.000000 <—- linked in NF too
+Olur10        & Olur17        3.607259  8    0.890708
+Olur11        & Olur17        >66.8812388    <0.000000 <—-
+Olur12        & Olur17        >37.2413798    <0.000010 <—-
+Olur13        & Olur17        0.844012  8    0.999055
+Olur15        & Olur17        0.444888  8    0.999915
+Olur10        & Olur18        >36.3768018    <0.000015 <——
+Olur11        & Olur18        >35.4503178    <0.000022 <—-
+Olur12        & Olur18        6.912812  8    0.546068
+Olur13        & Olur18        0.000000  8    1.000000
+Olur15        & Olur18        0.000000  8    1.000000
+Olur17        & Olur18        4.743656  8    0.784590
+Olur10        & Olur19        0.000000  8    1.000000
+Olur11        & Olur19        7.722796  8    0.461006
+Olur12        & Olur19        0.415623  8    0.999934
+Olur13        & Olur19        >79.5577178    <0.000000 <—- linked in NF too
+Olur15        & Olur19        >102.5184468    <0.000000 <—- linked in NF too
+Olur17        & Olur19        0.000000  8    1.000000
+Olur18        & Olur19        0.000000  8    1.000000
+
+Normal ending.

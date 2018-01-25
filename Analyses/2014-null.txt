@@ -1,0 +1,66 @@
+Genepop 4.7.0
+Estimation of null allele frequency by Brookfield's 1996 method.
+
+File: Data/oly_msats_2015/2015-SS-PG-GenePop.txt (Title line:"2014 SS & PG")
+
+Number of populations detected : 4
+Number of loci detected        : 8
+
+
+
+(Locus by population) table of estimated null allele frequencies
+================================================================
+Locus:     Populations (! names truncated to 6 characters):
+           PG-W   SS-W   PG-F1  SS-F1  
+           -----------------------------------------------------
+Olur10     0.0000 0.0000 0.0143 0.0000 
+Olur11     0.0000 0.0311 0.0000 0.0240 
+Olur12     0.0000 0.0087 0.0390 0.0000 
+Olur13     0.0000 0.0000 0.0000 0.0000 
+Olur15     0.0000 0.0000 0.0000 0.0000 
+Olur17     0.0000 0.0000 0.0000 0.0000 
+Olur18     0.0288 0.0000 0.0045 0.0046 
+Olur19     0.0000 0.0000 0.0000 0.0000 
+================================================================
+
+
+Confidence intervals for null allele frequencies
+=================================================
+                       Frequency   0.0250   0.9750 
+Locus      Population   estimate   bound    bound
+-------------------------------------------------
+Olur10     PG-W        0.0000     (No info for CI)
+           SS-W        0.0000     (No info for CI)
+           PG-F1       0.0143     0.0000  0.0548  
+           SS-F1       0.0000     (No info for CI)
+Olur11     PG-W        0.0000     (No info for CI)
+           SS-W        0.0311     0.0000  0.0858  
+           PG-F1       0.0000     (No info for CI)
+           SS-F1       0.0240     0.0000  0.0776  
+Olur12     PG-W        0.0000     (No info for CI)
+           SS-W        0.0087     0.0000  0.0563  
+           PG-F1       0.0390     0.0000  0.0917  
+           SS-F1       0.0000     (No info for CI)
+Olur13     PG-W        0.0000     (No info for CI)
+           SS-W        0.0000     (No info for CI)
+           PG-F1       0.0000     (No info for CI)
+           SS-F1       0.0000     (No info for CI)
+Olur15     PG-W        0.0000     (No info for CI)
+           SS-W        0.0000     (No info for CI)
+           PG-F1       0.0000     (No info for CI)
+           SS-F1       0.0000     (No info for CI)
+Olur17     PG-W        0.0000     (No info for CI)
+           SS-W        0.0000     (No info for CI)
+           PG-F1       0.0000     (No info for CI)
+           SS-F1       0.0000     (No info for CI)
+Olur18     PG-W        0.0288     0.0000  0.0694  
+           SS-W        0.0000     (No info for CI)
+           PG-F1       0.0045     0.0000  0.0482  
+           SS-F1       0.0046     0.0000  0.0428  
+Olur19     PG-W        0.0000     (No info for CI)
+           SS-W        0.0000     (No info for CI)
+           PG-F1       0.0000     (No info for CI)
+           SS-F1       0.0000     (No info for CI)
+=================================================
+
+Normal ending.

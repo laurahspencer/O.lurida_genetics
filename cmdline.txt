@@ -1,5 +1,5 @@
 Genepop
-GenepopInputFile=Data/Oly2016NFH+2017NFW_Merged.txt
+GenepopInputFile=Data/oly_msats_2015/2015-SS-PG-GenePop.txt
 MenuOptions=5:2
 EstimationPloidy=Diploid
 RandomSeed=67144630

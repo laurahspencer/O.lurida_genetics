@@ -1,0 +1,244 @@
+Genepop 4.7.0: Hardy-Weinberg test
+
+File: Data/oly_msats_2015/2015-SS-PG-GenePop.txt (Title line:"2014 SS & PG")
+
+Number of populations detected:    4
+Number of loci detected:           8
+
+
+Estimation of exact P-Values by the Markov chain method. 
+---------------------------------------------
+Markov chain parameters for all tests:
+Dememorization:              10000
+Batches:                     100
+Iterations per batch:        1000
+Hardy Weinberg: Probability test
+        ************************
+
+
+==========================================
+     Results by locus
+==========================================
+
+
+Locus "Olur10"
+-----------------------------------------
+                             Fis estimates
+                            ---------------
+POP         P-val   S.E.    W&C     R&H     Steps 
+----------- ------- ------- ------- ------- ------
+PG-W        0.3750  0.0397  -0.0589 -0.0242   1729 switches
+SS-W        0.7513  0.0365  -0.0266 -0.0186   2028 switches
+PG-F1       0.0616  0.0176   0.0354  0.0108   2993 switches
+SS-F1       0.4527  0.0425   0.0039  0.0212   1638 switches
+
+All (Fisher's method):
+ Chi2:    9.6924
+ Df   :    8.0000
+ Prob :    0.2873
+
+Locus "Olur11"
+-----------------------------------------
+                             Fis estimates
+                            ---------------
+POP         P-val   S.E.    W&C     R&H     Steps 
+----------- ------- ------- ------- ------- ------
+PG-W        0.7745  0.0270   0.0158 -0.0101   4131 switches
+SS-W        0.1765  0.0252   0.0773  0.0130   4870 switches
+PG-F1       0.6800  0.0341  -0.0818 -0.0278   3521 switches
+SS-F1       0.9189  0.0136   0.0600  0.0527   6710 switches
+
+All (Fisher's method):
+ Chi2:    4.9200
+ Df   :    8.0000
+ Prob :    0.7661
+
+Locus "Olur12"
+-----------------------------------------
+                             Fis estimates
+                            ---------------
+POP         P-val   S.E.    W&C     R&H     Steps 
+----------- ------- ------- ------- ------- ------
+PG-W        0.7796  0.0240  -0.0500 -0.0214   6553 switches
+SS-W        0.4319  0.0266   0.0243  0.0202   9808 switches
+PG-F1       0.4388  0.0307   0.0917  0.0390   8187 switches
+SS-F1       0.1715  0.0197   0.0010  0.0214   7786 switches
+
+All (Fisher's method):
+ Chi2:    7.3505
+ Df   :    8.0000
+ Prob :    0.4993
+
+Locus "Olur13"
+-----------------------------------------
+                             Fis estimates
+                            ---------------
+POP         P-val   S.E.    W&C     R&H     Steps 
+----------- ------- ------- ------- ------- ------
+PG-W        0.5663  0.0295  -0.0187 -0.0212  11469 switches
+SS-W        0.6886  0.0268  -0.0031  0.0061  11919 switches
+PG-F1       0.1784  0.0277  -0.0123  0.0074   5521 switches
+SS-F1       0.4636  0.0333  -0.0273 -0.0255   6852 switches
+
+All (Fisher's method):
+ Chi2:    6.8681
+ Df   :    8.0000
+ Prob :    0.5509
+
+Locus "Olur15"
+-----------------------------------------
+                             Fis estimates
+                            ---------------
+POP         P-val   S.E.    W&C     R&H     Steps 
+----------- ------- ------- ------- ------- ------
+PG-W        0.6022  0.0280  -0.0187 -0.0212  11473 switches
+SS-W        0.7413  0.0229  -0.0026  0.0061  11642 switches
+PG-F1       0.1926  0.0265  -0.0154  0.0055   5783 switches
+SS-F1       0.3947  0.0330  -0.0153 -0.0204   6877 switches
+
+All (Fisher's method):
+ Chi2:    6.7662
+ Df   :    8.0000
+ Prob :    0.5621
+
+Locus "Olur17"
+-----------------------------------------
+                             Fis estimates
+                            ---------------
+POP         P-val   S.E.    W&C     R&H     Steps 
+----------- ------- ------- ------- ------- ------
+PG-W        0.4044  0.0416   0.0090 -0.0020   2836 switches
+SS-W        0.6590  0.0344  -0.0279 -0.0178   4261 switches
+PG-F1       0.7233  0.0323  -0.0213 -0.0190   4439 switches
+SS-F1       0.9904  0.0055  -0.0576 -0.0318   4544 switches
+
+All (Fisher's method):
+ Chi2:    3.3122
+ Df   :    8.0000
+ Prob :    0.9133
+
+Locus "Olur18"
+-----------------------------------------
+                             Fis estimates
+                            ---------------
+POP         P-val   S.E.    W&C     R&H     Steps 
+----------- ------- ------- ------- ------- ------
+PG-W        0.8641  0.0261   0.0650  0.0314   2270 switches
+SS-W        0.1079  0.0259  -0.0060  0.0010   1648 switches
+PG-F1       0.2058  0.0320   0.0155  0.0070   2294 switches
+SS-F1       0.9922  0.0039   0.0151 -0.0020   2658 switches
+
+All (Fisher's method):
+ Chi2:    7.9220
+ Df   :    8.0000
+ Prob :    0.4411
+
+Locus "Olur19"
+-----------------------------------------
+                             Fis estimates
+                            ---------------
+POP         P-val   S.E.    W&C     R&H     Steps 
+----------- ------- ------- ------- ------- ------
+PG-W        0.5578  0.0268  -0.0187 -0.0212  11254 switches
+SS-W        0.6603  0.0247  -0.0031  0.0061  11902 switches
+PG-F1       0.1744  0.0233  -0.0161  0.0061   5670 switches
+SS-F1       0.6022  0.0338  -0.0288 -0.0261   6428 switches
+
+All (Fisher's method):
+ Chi2:    6.5045
+ Df   :    8.0000
+ Prob :    0.5909
+
+==========================================
+     Results by population
+==========================================
+
+
+Pop : PG-W
+-----------------------------------------
+                             Fis estimates
+                            ---------------
+locus       P-val   S.E.    W&C     R&H     Steps 
+----------- ------- ------- ------- ------- ------
+Olur10      0.3750  0.0397  -0.0589 -0.0242   1729 switches
+Olur11      0.7745  0.0270   0.0158 -0.0101   4131 switches
+Olur12      0.7796  0.0240  -0.0500 -0.0214   6553 switches
+Olur13      0.5663  0.0295  -0.0187 -0.0212  11469 switches
+Olur15      0.6022  0.0280  -0.0187 -0.0212  11473 switches
+Olur17      0.4044  0.0416   0.0090 -0.0020   2836 switches
+Olur18      0.8641  0.0261   0.0650  0.0314   2270 switches
+Olur19      0.5578  0.0268  -0.0187 -0.0212  11254 switches
+
+All (Fisher's method):
+ Chi2 :    8.3929
+ Df   :    16.0000
+ Prob :    0.9363
+
+Pop : SS-W
+-----------------------------------------
+                             Fis estimates
+                            ---------------
+locus       P-val   S.E.    W&C     R&H     Steps 
+----------- ------- ------- ------- ------- ------
+Olur10      0.7513  0.0365  -0.0266 -0.0186   2028 switches
+Olur11      0.1765  0.0252   0.0773  0.0130   4870 switches
+Olur12      0.4319  0.0266   0.0243  0.0202   9808 switches
+Olur13      0.6886  0.0268  -0.0031  0.0061  11919 switches
+Olur15      0.7413  0.0229  -0.0026  0.0061  11642 switches
+Olur17      0.6590  0.0344  -0.0279 -0.0178   4261 switches
+Olur18      0.1079  0.0259  -0.0060  0.0010   1648 switches
+Olur19      0.6603  0.0247  -0.0031  0.0061  11902 switches
+
+All (Fisher's method):
+ Chi2 :    13.1814
+ Df   :    16.0000
+ Prob :    0.6595
+
+Pop : PG-F1
+-----------------------------------------
+                             Fis estimates
+                            ---------------
+locus       P-val   S.E.    W&C     R&H     Steps 
+----------- ------- ------- ------- ------- ------
+Olur10      0.0616  0.0176   0.0354  0.0108   2993 switches
+Olur11      0.6800  0.0341  -0.0818 -0.0278   3521 switches
+Olur12      0.4388  0.0307   0.0917  0.0390   8187 switches
+Olur13      0.1784  0.0277  -0.0123  0.0074   5521 switches
+Olur15      0.1926  0.0265  -0.0154  0.0055   5783 switches
+Olur17      0.7233  0.0323  -0.0213 -0.0190   4439 switches
+Olur18      0.2058  0.0320   0.0155  0.0070   2294 switches
+Olur19      0.1744  0.0233  -0.0161  0.0061   5670 switches
+
+All (Fisher's method):
+ Chi2 :    22.0353
+ Df   :    16.0000
+ Prob :    0.1421
+
+Pop : SS-F1
+-----------------------------------------
+                             Fis estimates
+                            ---------------
+locus       P-val   S.E.    W&C     R&H     Steps 
+----------- ------- ------- ------- ------- ------
+Olur10      0.4527  0.0425   0.0039  0.0212   1638 switches
+Olur11      0.9189  0.0136   0.0600  0.0527   6710 switches
+Olur12      0.1715  0.0197   0.0010  0.0214   7786 switches
+Olur13      0.4636  0.0333  -0.0273 -0.0255   6852 switches
+Olur15      0.3947  0.0330  -0.0153 -0.0204   6877 switches
+Olur17      0.9904  0.0055  -0.0576 -0.0318   4544 switches
+Olur18      0.9922  0.0039   0.0151 -0.0020   2658 switches
+Olur19      0.6022  0.0338  -0.0288 -0.0261   6428 switches
+
+All (Fisher's method):
+ Chi2 :    9.7265
+ Df   :    16.0000
+ Prob :    0.8805
+==========================================
+ All locus, all populations 
+==========================================
+All (Fisher's method) :
+ Chi2 :    53.3359
+ Df   :    64.0000
+ Prob :    0.8266
+
+Normal ending
