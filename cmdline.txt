@@ -1,7 +1,9 @@
 Genepop
-GenepopInputFile=Data/oly_msats_2015/2015-SS-PG-GenePop.txt
-MenuOptions=5:2
-EstimationPloidy=Diploid
+GenepopInputFile=Data/Oly2016NFH+2017NFW_Merged.txt
+MenuOptions=3:4
+Dememorisation=10000
+BatchNumber=100
+BatchLength=1000
 RandomSeed=67144630
 Mode=Batch
 

@@ -1,8 +1,0 @@
-"0","# I need the data as a normal dataframe, so I re-read the data into R as .csv"
-"0","NF.csv <- read.csv(file=""Data/Oly2016NFH+2017NFW_Merged.csv"", stringsAsFactors = F)"
-"0","names(NF.csv) <- NF.csv[2,]"
-"0","NF.csv <- NF.csv[-1:-2,]"
-"0","NFW.df <- subset(NF.csv, NF.csv$Population == ""NFW-2017"") #subset the wild pop"
-"0","NFH.df <- subset(NF.csv, NF.csv$Population == ""NFH-2016"") #subset the hatchery pop"
-"0","NFW.df.1 <- NFW.df[,-1:-2] #remove metadata "
-"0","NFH.df.1 <- NFH.df[,-1:-2] #remove metadata"

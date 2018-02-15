@@ -1,29 +1,27 @@
 # Import 2016/2017 microsatellite data
 # Used the following reference: https://grunwaldlab.github.io/Population_Genetics_in_R/TOC.html
 
+library(poppr)
 NFH.2016 <- read.genalex("Data/Oly2016NFH_Rounded.csv", ploidy=2, genclone=FALSE) #read as a genind object, not genclone
 NFW.2017 <- read.genalex("Data/Oly2017NFW_Rounded.csv", ploidy=2, genclone=FALSE)
-NF <- read.genalex("Data/Oly2016NFH+2017NFW_Merged.csv", ploidy=2, genclone=FALSE)
+NF.2016.17 <- read.genalex("Data/Oly2016NFH+2017NFW_Merged.csv", ploidy=2, genclone=FALSE)
 summary(NFH.2016)
 summary(NFW.2017) #summary of wild samples
-summary(NF) #summary of hatchery and wild combined 
-?read.genalex()
-
-
+summary(NF.2016.17) #summary of hatchery and wild combined 
 
 # Have we sampled enough loci? 
 NFH.2016.acccurve <- genotype_curve(NFH.2016, sample=1000, quiet=T) 
 NFW.2017.acccurve <- genotype_curve(NFW.2017, sample=1000, quiet=T)
-NF.acccurve <- genotype_curve(NF, sample=1000, quiet=T)
+NF.acccurve <- genotype_curve(NF.2016.17, sample=1000, quiet=T)
 
 # Summary stats on # alleles
 NFH.2016.table <- locus_table(NFH.2016) #mean # alleles = 18.67
 NFW.2017.table <- locus_table(NFW.2017) #mean # alleles = 19.33
-NF.table <- locus_table(NF)
+NF.table <- locus_table(NF.2016.17)
 
-info_table(NF, type="missing", plot=TRUE) #see how the missing data is distributed over the 2 populations
-mlg.table(NF) #genotype eveness. Result is N=199; MLG=199
-NF.pop <- poppr(NF) #summary stats on each population
+info_table(NF.2016.17, type="missing", plot=TRUE) #see how the missing data is distributed over the 2 populations
+mlg.table(NF.2016.17) #genotype eveness. Result is N=199; MLG=199
+NF.pop <- poppr(NF.2016.17) #summary stats on each population
 (NF.pop$N / (NF.pop$N - 1)) * NF.pop$lambda #corrected simpson's index (N/(N-1)) #all different genotypes
 
 #---- Abbreviation	Statistic ---#
@@ -54,7 +52,7 @@ NF.pop <- poppr(NF) #summary stats on each population
 
 
 library("pegas")
-NF.HW <- seppop(NF) %>% lapply(hw.test, B=1000) #all P-values >0.05; do not reject the null that these populations are under HWE. 
+NF.HW <- seppop(NF.2016.17) %>% lapply(hw.test, B=1000) #all P-values >0.05; do not reject the null that these populations are under HWE. 
 NF.HW.P <- sapply(NF.HW , "[", i=TRUE, j=3) #pvalues of HW chi-squared test for all loci, both pops
 
 # Are populations in linkage disequilibrium? The null hypothesis tested is that alleles observed at different loci are not linked if populations are sexual while alleles recombine freely into new genotypes during the process of sexual reproduction
@@ -62,13 +60,13 @@ NF.HW.P <- sapply(NF.HW , "[", i=TRUE, j=3) #pvalues of HW chi-squared test for 
 # ... where V0 is the observed variance of K and VE is the expected variance of K, where K is the number of loci at which two individuals differ.
 
 library("magrittr")
-NF.ia.H <- ia(popsub(NF, "NFH-2016"), sample=999)
-NF.ia.W <- ia(popsub(NF, "NFW-2017"), sample=999)
+NF.ia.H <- ia(popsub(NF.2016.17, "NFH-2016"), sample=999)
+NF.ia.W <- ia(popsub(NF.2016.17, "NFW-2017"), sample=999)
 #we find significant support for the hypothesis that alleles are linked across loci with P<0.001
 
 #which loci are linked? run pairwise assessment: 
-NF.W2017.pair <- pair.ia(popsub(NF, "NFW-2017"))
-NF.H2016.pair <- pair.ia(popsub(NF, "NFH-2016"))
+NF.W2017.pair <- pair.ia(popsub(NF.2016.17, "NFW-2017"))
+NF.H2016.pair <- pair.ia(popsub(NF.2016.17, "NFH-2016"))
 pair.range <- range(c(NF.W2017.pair, NF.H2016.pair), na.rm=TRUE)
 plot(NF.W2017.pair, limits=pair.range)
 plot(NF.H2016.pair, limits=pair.range)
@@ -77,7 +75,7 @@ NF.H2016.pair
 
 # it looks like loci 13, 15 & 19 are possibly linked
 
-NF.freq <- rraf(NF, by_pop=TRUE)
+NF.freq <- rraf(NF.2016.17, by_pop=TRUE)
 NF.freq.t <- t(NF.freq)
 plot(NF.freq.t)
 
@@ -86,8 +84,8 @@ plot(NF.freq.t)
 library("adegenet")
 library("pegas")
 library("hierfstat")
-NF.summary <- summary(NF)
-NFW.2017.summary <- summary(popsub(NF, "NFW-2017"))
+NF.summary <- summary(NF.2016.17)
+NFW.2017.summary <- summary(popsub(NF.2016.17, "NFW-2017"))
 NFW.2017.summary
 plot(NFW.2017.summary$Hobs, xlab="Loci number", ylab="Observed Heterozygosity", 
      main="Observed heterozygosity per locus, NFW 2017")
@@ -95,13 +93,15 @@ plot(NFW.2017.summary$Hobs, NFW.2017.summary$Hexp, xlab="Observed Heterozygosity
      main="Expected ~ Observed Heterozygosity per locus, NFW 2017")
 bartlett.test(list(NFW.2017.summary$Hexp, NFW.2017.summary$Hobs)) #indicates no difference between mean observed and expected heterozygosity 
 
-NFH.2016.summary <- summary(popsub(NF, "NFH-2016"))
+NFH.2016.summary <- summary(popsub(NF.2016.17, "NFH-2016"))
 NFH.2016.summary
 plot(NFH.2016.summary$Hobs, xlab="Loci number", ylab="Observed Heterozygosity", 
      main="Observed heterozygosity per locus, NFH 2016")
 plot(NFH.2016.summary$Hobs, NFH.2016.summary$Hexp, xlab="Observed Heterozygosity", ylab="Expected Heterozygosity", 
      main="Expected ~ Observed Heterozygosity per locus, NFH 2016")
 bartlett.test(list(NFH.2016.summary$Hexp, NFH.2016.summary$Hobs)) #indicates no difference between mean observed and expected heterozygosity 
+
+### Can start here for histograms 
 
 # ------Calculate and plot allelic frequencies-----#
 
@@ -139,6 +139,9 @@ NFH.afreq <- allelic.freq(NFW.df.1)[,-1]
 NFW.afreq <- allelic.freq(NFH.df.1)[,-1]
 write.table(NFH.afreq,file="Analyses/NFH-2016-Allelefrequencies.txt",row.names=FALSE,col.names=TRUE,sep="\t",append=FALSE)
 write.table(NFW.afreq,file="Analyses/NFW-2017-Allelefrequencies.txt",row.names=FALSE,col.names=TRUE,sep="\t",append=FALSE)
+
+
+
 
 Freq.Plots <- function(wanted_locus, frequency_table, population) {
   Locus=frequency_table[which(frequency_table[,1]==wanted_locus),]
