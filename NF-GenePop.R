@@ -130,6 +130,13 @@ Olur10 <- plot_ly(data = subset(allele.frequencies, allele.frequencies$Locus == 
          xaxis = list(title = 'Allele Size (bp)'),
          legend = list(x=.95, y=.95))
 
+library(ggplot2)
+Olur10.ggplot <- ggplot(data=subset(allele.frequencies, allele.frequencies$Locus == "Olur10"), aes(x=allele, y=count, fill = type)) + 
+  geom_bar(stat="identity", position = position_dodge()) + 
+  scale_fill_brewer(palette = "Set1") + 
+  labs(title="2016 Allele Frequency, Wild vs. F1", 
+       x="Allele Size (bp)", y = "Frequency in Population")
+
 Olur11 <- plot_ly(data = subset(allele.frequencies, allele.frequencies$Locus == "Olur11"), x = ~allele, y = ~count, type="bar", color=~Population, hovertext=~count) %>%  #generate plotly plot
   layout(title="Olur11 Allele Frequency",
          xaxis = list(title = 'Allele Size (bp)'),
@@ -192,8 +199,39 @@ OlurAll.SS.2014 <- plot_ly(data = subset(allele.frequencies, allele.frequencies$
          yaxis = list(title = 'Frequency'),
          legend = list(x=.95, y=.95))
 
+Olur10.ggplot.2014 <- ggplot(data=Olur10.data.2014, aes(x=allele, y=count, fill = type)) + 
+  geom_bar(stat="identity", position = position_dodge()) + 
+  scale_fill_brewer(palette = "Set1") + 
+  labs(title="2014 Allele Frequency, Wild vs. F1, Olur10", 
+       x="Allele Size (bp)", y = "Frequency in Population")
+
+
+
 OlurAll.PG.2014 <- plot_ly(data = subset(allele.frequencies, allele.frequencies$Population == "PGH.2014" | allele.frequencies$Population == "PGW.2014"), x = ~allele, y = ~count, type="bar", color=~type, hovertext=~count) %>%  #generate plotly plot
   layout(title="Port Gamble Allele Frequency, All Loci (2014)",
          xaxis = list(title = 'Allele Size (bp)'),
          yaxis = list(title = 'Frequency'),
          legend = list(x=.95, y=.95))
+
+
+#Create a fake allele frequency plot for presentation visualization
+Olur10.data <- subset(allele.frequencies, allele.frequencies$Locus == "Olur10")
+Olur10.data.2014 <- subset(Olur10.data, Olur10.data$Population == "SSH.2014" | Olur10.data$Population == "SSW.2014")
+Olur10.data.2014.fake <- Olur10.data.2014[order(Olur10.data.2014$allele),]
+Olur10.data.2014.fake$type <- c("Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1","Wild","F1")
+Olur10.data.2014.fake$allele <- c(208, 208, 211, 211, 214, 214, 217, 217, 223, 223, 229, 229, 232, 232, 235, 235, 238, 238, 241, 241, 244, 244, 247, 247, 250, 250, 253, 253, 259, 259, 268, 268, 271, 271, 274, 274, 277, 277, 280, 280, 283, 283, 286, 286, 289, 289, 292, 292, 295, 295, 298, 298, 301, 301, 307, 307, 310, 310)
+Olur10.data.2014.fake$count <- c(1, 0,  3,  0, 2, 0,  4,  0,  1,  0,  5,  0,  2, 4,  3,  5, 17, 25, 10, 20, 13,  9,  9,  1,  1, 2, 20,  22,  8,  8,  0,  0,  2,  1,  2,  0, 12,  0,  2, 11,  7,  5,  12,  1,  7,  0,  25,  0, 17, 0,  5, 0,  6,  0,  4,  0,  1,  0)
+
+Olur10.fake <- ggplot(data=Olur10.data.2014.fake, aes(x=allele, y=count, fill = type)) + 
+  geom_bar(stat="identity", position = position_dodge()) + 
+  scale_fill_brewer(palette = "Set1") + 
+  labs(title="Hypothetical Allele Frequency", 
+         x="Allele Size (bp)", y = "Frequency in Population")
+Olur10.data.2014.fake.worst <- Olur10.data.2014.fake
+Olur10.data.2014.fake.worst$count <- c(1, 0,  3,  0, 2, 0,  4,  0,  1,  0,  5,  0,  2, 0,  3,  0, 17, 0, 10, 50, 0,  0,  9,  0,  1, 0, 20, 50,  8,  0,  0,  0,  2,  0,  2,  0, 12,  0,  2, 0,  7,  0,  12,  0,  7,  0,  25,  0, 17, 0,  5, 0,  6,  0,  4,  0,  1,  0)
+
+Olur10.fake.worst <- ggplot(data=Olur10.data.2014.fake.worst, aes(x=allele, y=count, fill = type)) + 
+  geom_bar(stat="identity", position = position_dodge()) + 
+  scale_fill_brewer(palette = "Set1") + 
+  labs(title="Hypothetical Allele Frequency", 
+       x="Allele Size (bp)", y = "Frequency in Population")
